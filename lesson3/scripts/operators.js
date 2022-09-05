@@ -50,5 +50,4 @@ let num2 = 20;
 // console.log(!false);
 
 // console.log(5 ^ 2);
-// console.log(10 << 4);
-
+console.log(10 << 4);
