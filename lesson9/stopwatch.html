@@ -1,0 +1,114 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'Eina';
+            src: url('fonts/eina01-regular-webfont.57ac5b4b.woff2') format('woff2');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Eina';
+            src: url('fonts/eina01-semibold-webfont.93d21e16.woff2') format('woff2');
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Eina';
+            src: url('fonts/eina01-bold-webfont.17ecfa75.woff2') format('woff2');
+            font-weight: 600;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        * {
+            font-family: "Eina";
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url("Third-Mainland-Bridge.webp");
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0px;
+            color: white;
+        }
+
+        .container {
+            background-color: #01010160;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .time {
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+            font-size: 4em;
+            font-weight: 500;
+        }
+
+        .controls {
+            display: flex;
+            align-items: center;
+            min-width: 24rem;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .controls button {
+            padding: 10px 25px;
+            border-radius: 20px;
+            font-size: 1rem;
+            background-color: orange;
+            border: none;
+            font-weight: 400;
+            cursor: pointer;
+        }
+
+        .controls-group {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="time">
+            <div class="hours">00</div>
+            <span>:</span>
+            <div class="mins">00</div>
+            <span>:</span>
+            <div class="secs">00</div>
+            <span>:</span>
+            <div class="tens">00</div>
+        </div>
+
+        <div class="controls">
+            <button class="start">Start</button>
+            <div class="controls-group">
+                <button class="stop">Stop</button>
+                <button class="reset">Reset</button>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/stopwatch.js"></script>
+</body>
+</html>
