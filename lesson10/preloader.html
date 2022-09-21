@@ -35,10 +35,24 @@
       .card .name {
         font-weight: bold;
       }
+
+      .preloader {
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        z-index: 99;
+        font-size: 24px;
+        transition: all 0.3s ease-in-out;
+      }
     </style>
   </head>
   <body>
+    <div class="preloader" id="preloader">Loading...</div>
     <div class="students-list"></div>
-    <script src="scripts/app.js"></script>
+    <script src="scripts/preloader.js"></script>
   </body>
 </html>
